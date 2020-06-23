@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(method='POST' action='/new')
+    div.form-group
+        label(for='name') Name:
+        input#name.form-control(type='text', placeholder='first and last' name='name')
+    div.form-group
+        label(for='message') Message:
+        textarea#name.form-control(type='textarea', placeholder='Enter message!' name='message')
+    div.form-group
+        button.btn.btn-primary(type='submit') Submit
